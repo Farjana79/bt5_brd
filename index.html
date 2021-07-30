@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Media css -->
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+ 
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1>Accordion practice</h1>
+
+            <div class="accordion accordion-flush" id="acc_flash">
+
+              <!-- item_1 -->
+              <div class="accordion-item ">
+                <h2 class="accordion-header acc_header" id="flash_h1">
+                  <button class="accordion-button collapsed acc_bttn" type="button" data-bs-toggle="collapse" data-bs-target="#col_one" aria-expanded="false" aria-controls="col_one">
+                    What is accordian component?
+                  </button>
+                </h2>
+                <div id="col_one" class="accordion-collapse collapse" aria-labelledby="flash_h1" data-bs-parent="#acc_flash">
+                  <div class="accordion-body acc_body shadow-lg">the accordion content type is a list of up to five headings which when clicked cen expand and collaps to easily reveal and hide additional content.the accordion content type is a list of up to five headings which when clicked cen expand and collaps to easily reveal and hide additional content</div>
+                </div>
+              </div>
+
+              <!-- item_2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header acc_header" id="flush_h2">
+                  <button class="accordion-button collapsed acc_bttn" type="button" data-bs-toggle="collapse" data-bs-target="#col_Two" aria-expanded="false" aria-controls="col_Two">
+                    How it works?
+                  </button>
+                </h2>
+                <div id="col_Two" class="accordion-collapse collapse" aria-labelledby="flush_h2" data-bs-parent="#acc_flash">
+                  <div class="accordion-body acc_body  shadow-lg">The accordion uses collapse internally to make it collapsible. To render an accordion that’s expanded, add the .open class on the .accordion.</div>
+                </div>
+              </div>
+
+
+              <!-- item_2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header acc_header" id="flush_h3">
+                  <button class="accordion-button collapsed acc_bttn" type="button" data-bs-toggle="collapse" data-bs-target="#col_Three" aria-expanded="false" aria-controls="col_Three">
+                    Example!
+                  </button>
+                </h2>
+                <div id="col_Three" class="accordion-collapse collapse" aria-labelledby="flush_h3" data-bs-parent="#acc_flash">
+                  <div class="accordion-body acc_body shadow-lg">Click the accordions below to expand/collapse the accordion content.</div>
+                </div>
+              </div>
+
+            
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+           <div>
+            <h1>Alert practice</h1>
+            <div class="alert-sec">
+              <div class="alert alert-primary" role="alert">
+                check your internet connection!
+              </div>
+              <div class="alert alert-success" role="alert">
+                Go to <a href="https://getbootstrap.com/" class="alert-link">Bootstrap website</a> and gather more knowledge.
+              </div>
+
+              <div class="alert alert-secondary d-flex align-items-center  alert-dismissible fade show" role="alert">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+                  <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+                <div>
+                  Failed to log in!
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+
+          
+
+            </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1>Badge pratice</h1>
+
+           <button type="button" class=" btn btn-primary position-relative">inbox
+             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">99+</span>
+           </button>
+          </div>
+
+          <div class="col-lg-6">
+            <h1>readcrumb pratice</h1>
+        
+            
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+               <li class="breadcrumb-item"><a href="#">Home</a></li>
+               <li class="breadcrumb-item"><a href="#">library</a></li>
+               <li class="breadcrumb-item"><a href="#">class</a></li>
+               <li class="breadcrumb-item"><a href="#">market</a></li>
+               <li class="breadcrumb-item active" aria-current="page">village</li>
+              
+
+              </ol>
+            </nav>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container  mt-5">
+        <div class="row">
+          <h1 class="text-center">Card practice</h1>
+          <div class="col-lg-4">
+            <div class="card m_card shadow-lg">
+              <div class="m_img">
+              <img src="./img/banner.png" class="card-img-top" alt="...">
+            </div>
+              <div class="card-body">
+                <h5 class="card-title">Web designer</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero expedita pariatur perferendis quasi aliquam quas accusamus fugit tenetur recusandae sit!</p>
+                <a href="#" class="btn btn-primary">Portfolio</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            
+          <div class="card">
+          <div class="row g-0">
+            <div class="col-lg-6">
+              <div class="c_img">
+                <img src="./img/img3.png" class="img-fluid rounded-start" alt="">
+              </div>
+            </div>
+              <div class="col-lg-6">
+                <div class="card-body">
+                  <h2 class="card-title">web developer</h2>
+                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, error quod harum nemo libero, quis officiis ex sequi. Voluptatum!</p>
+                </div>
+              </div>
+           
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="c mt-5">
+      <div class="container">
+        <div class="row">
+          <h1>Collapse practice</h1>
+          <div class="col-lg-4">
+
+         <div class="colps">
+            <a class="btn btn-primary my_btn" data-bs-toggle="collapse" href="#c_exm" role="button" aria-expanded="false" aria-controls="c_exm">
+              click me
+            </a>
+         
+          </p>
+          <div class="collapse" id="c_exm">
+            <div class="card card-body btn_body">
+              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <h1>Dropdown</h1>
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+         
+               
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#n_down" aria-controls="n_down" aria-expanded="false" aria-label="Toggle navigation">
+
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+               
+                
+                <div class="collapse navbar-collapse" id="n_down">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="d_link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      
+                      <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="d_link">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mt-5">
+      <div class="row">
+        <h1>Navs & tabs</h1>
+        <div class="col-lg-12">
+          <ul class="nav justify-content-end bg-secondary ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Privacy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Support</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <nav class="navbar navbar-expand-lg navber-dark mt-5 mnu">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./img/logo.png" height="30px" alt="">
+        </a>
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 nv_item">
+            <li class="nav-item ">
+              <a class="nav-link"  href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+    
+    
+
+   
+
+   
+
+    <!-- Bootstrap JS link -->
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom js link  -->
+    <script src="js/scipt.js"></script>
+    
+  </body>
+</html>
